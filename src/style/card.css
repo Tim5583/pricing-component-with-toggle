@@ -1,0 +1,89 @@
+.card {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem .7rem;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.076);
+}
+
+.plan {
+    font-size: 18px;
+    opacity: .6;
+}
+
+.price {
+    font-size: 60px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+}
+
+.dollorSign {
+    font-size: 35px;
+}
+
+.card .storage, .usersAllow, .limit {
+    width: 100%;
+    text-align: center;
+    font-size:  15px;
+    border-top: 2px solid rgba(211, 211, 211, 0.693);
+    padding: .9em 0;
+    font-weight: bold;
+    color: rgb(111, 111, 111);
+}
+
+.limit {
+    border-bottom: 2px solid rgba(211, 211, 211, 0.679);
+}
+
+.btn {
+    padding: .8em 2em;
+    width: 100%;
+    color: #fff;
+    background-image: linear-gradient(90deg, #a7a8e1, #7175e0);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: color 500ms ease-in-out;
+}
+
+.btn:hover {
+    background-image: none;
+    background-color: transparent;
+    outline: 1px solid rgb(199, 199, 199);
+    color: #6c70de;
+}
+
+.card.pro {
+    background-image: linear-gradient(145deg, rgb(154, 160, 240),#6d6fde);
+    color: #fff;
+    padding: 2.5rem .7rem;
+}
+
+.card.pro .plan {
+    opacity: 1;
+}
+
+.card.pro .storage, .card.pro .usersAllow, .card.pro .limit {
+    color: #fff;
+}
+
+.card.pro .btn {
+    background-color: #fff;
+    background-image: none;
+    color: #6f73df;
+    transition: 500ms ease-in-out;
+}
+
+.card.pro .btn:hover {
+    color: #fff;
+    background-color: transparent;
+}
