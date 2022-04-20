@@ -7,6 +7,7 @@
     padding: 1.5rem .7rem;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.076);
+    background-color: #fff;
 }
 
 .plan {
@@ -20,6 +21,7 @@
     display: flex;
     align-items: center;
     margin: 1.5rem 0;
+    color: #494d60;
 }
 
 .dollorSign {
@@ -70,6 +72,10 @@
 
 .card.pro .plan {
     opacity: 1;
+}
+
+.card.pro .price {
+    color: white;
 }
 
 .card.pro .storage, .card.pro .usersAllow, .card.pro .limit {

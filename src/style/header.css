@@ -1,49 +1,58 @@
 .header {
     text-align: center;
-    padding: 3rem 0 1.5rem;
 }
 
 .header h1 {
-    font-size: 30px;
+    font-size: 35px;
+    color: #72748e;
+    letter-spacing: 1px;
 }
 
 .switch {
     margin: 1.5rem auto;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
+
 
 #pricing {
     display: none;
 }
 
 .switch .pricingLabel {
-    width: 40px;
-    height: 20px;
+    width: 50px;
+    height: 30px;
     margin: 0 10px;
     border-radius: 25px;
     position: relative;
     cursor: pointer;
     background-image: linear-gradient(90deg, #999ff0, #6e70de);
+    transition: 200ms ease-in;
+}
+
+.switch .pricingLabel:hover {
+    opacity: .7;
 }
 
 .switch .switchLabels {
     font-size: 15px;
-    opacity: .8;
+    color: #b2b1c1;
+    font-weight: bolder;
 }
 
 .switch .pricingLabel .circle {
-    height: 16px;
-    width: 16px;
+    height: 24px;
+    width: 24px;
     background-color: white;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 2px;
+    right: 4px;
 }
 
 #pricing:checked + .pricingLabel .circle {
-    left: auto;
-    right: 2px;
+    right: auto;
+    left: 4px;
 }
