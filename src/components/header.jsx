@@ -1,14 +1,16 @@
-import classes from "../style/header.module.css";
+import "../style/header.css";
 
 const Header = (props) => {
     return ( 
-        <header className={classes.header}>
+        <header className="header">
             <h1>Our Pricing</h1>
-            <div className={classes.switch}>
-                <p>Annually</p>
+            <div className="switch">
+                <p className="switchLabels">Annually</p>
                 <input type="checkbox" id="pricing"/>
-                <label htmlFor="pricing"></label>
-                <p>Monthly</p>
+                <label htmlFor="pricing" className="pricingLabel">
+                    <div className="circle"></div>
+                </label>
+                <p className="switchLabels">Monthly</p>
             </div>
         </header>
      );

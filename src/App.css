@@ -3,3 +3,10 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 920px) {
+    .container {
+      flex-direction: column;
+      gap: 10px;
+    }
+}
