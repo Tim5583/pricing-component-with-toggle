@@ -8,7 +8,7 @@ const Header = (props) => {
                 <p className="switchLabels">Annually</p>
                 <input type="checkbox" id="pricing"/>
                 <label htmlFor="pricing" className="pricingLabel" onClick={props.setParmentOpt}>
-                    <div className="circle"></div>
+                    <span className="circle"></span>
                 </label>
                 <p className="switchLabels">Monthly</p>
             </div>

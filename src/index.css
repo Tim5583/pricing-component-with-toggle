@@ -11,12 +11,14 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f7f7ff;
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url(../public/images/bg-top.svg) no-repeat right -120px top, url(../public/images/bg-bottom.svg) no-repeat left bottom;
+  background-color: #f7f7ff;
+  background-image: url(../public/images/bg-top.svg), url(../public/images/bg-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right -120px top, left bottom;
 }
 
 code {
